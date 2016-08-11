@@ -1,0 +1,158 @@
+---
+---
+
+@font-face {
+  font-family: Muli;
+  src: url(/fonts/Muli-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'La Belle Aurore';
+  src: url(/fonts/LaBelleAurore.ttf);
+}
+
+$font-header: 'La Belle Aurore', cursive;
+$font-normal:  'Muli', 'Arial', sans-serif;
+
+$color-blackish:rgba(5, 31, 30, 1);
+$color-dark:    rgba(14, 96, 94, 1);
+$color-mid-dark:rgba(56, 125, 122, 1);
+$color-mid:     rgba(112, 193, 179, 1);
+$color-mid-pale:rgba(190, 230, 206, 1);
+$color-pale:    rgba(234, 247, 230, 1);
+$color-whiteish:rgba(247, 247, 247, 1);
+
+
+body {
+  background-color: $color-whiteish;
+  color: $color-blackish;
+  font-family: $font-normal;
+  font-size: 1.5em;
+}
+
+
+// ::::::::: text-styles... get it? ::::::::: //
+
+a {
+  color: $color-dark;
+  text-decoration: none;
+}
+
+a:visited {
+  color: currentColor;
+}
+
+a:hover {
+  color: $color-whiteish;
+  text-decoration: none;
+}
+
+h1 {
+  font-family: $font-header;
+  font-size: 40px;
+  color: $color-blackish;
+}
+h2 {
+  font-family: $font-header;
+  font-size: 30px;
+  color: $color-mid-dark;
+}
+h3 {
+  font-family: $font-header;
+  font-size: 25px;
+}
+h4 {
+  font-family: $font-normal;
+  font-size: 25px;
+}
+h5 {
+  font-family: $font-normal;
+  font-size: 20px;
+}
+
+// ::::::::: header and title banner ::::::::: //
+
+.site-header {
+  background-color: $color-pale;
+}
+
+.site-title {
+  text-align: center;
+  width: 80%;
+  margin: 30px auto 15px auto;
+  h1 {
+    margin: 2px;
+  }
+  h2 {
+    margin-top: 0px;
+  }
+}
+
+// ::::::::: navigation ::::::::: //
+.navbar {
+  border: 0;
+  margin-bottom: 0;
+}
+
+.navbar-default {
+  background-color: $color-mid;
+  border-radius: 0;
+  a {
+    color: $color-dark;
+    font-family: $font-normal;
+    font-size: 16px;
+  }
+  .btn:hover {
+    color: $color-whiteish;
+  }
+  .btn:active {
+    box-shadow: none;
+  }
+  .btn:focus {
+    color: $color-pale;
+  }
+}
+
+// ::::::::: footer ::::::::: //
+
+.footer {
+  background-color: $color-mid;
+  width: 100%;
+  padding: 10px;
+  margin-top: 50px;
+  text-align: center;
+  p {
+    margin: 0;
+  }
+}
+
+// ::::::::: photo carousel ::::::::: //
+
+.carousel-inner {
+
+  .item img {
+    display: inline;
+    height: 450px;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+// ::::::::: body text ::::::::: //
+
+.about-text {
+  padding: 20px 50px;
+  text-align: justify;
+  margin: 0 -15px;
+  h2 {
+    text-align: center;
+  }
+}
+
+.blog-preview {
+  padding: 10px 50px;
+  text-align: justify;
+  h2 {
+    text-align: center;
+  }
+}
